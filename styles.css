@@ -1,0 +1,79 @@
+@font-face {
+    font-family: 'Inter Black';
+    src: url(fonts/Inter_28pt-Black.ttf);
+}
+@font-face {
+    font-family: 'Inter Medium';
+    src: url(fonts/Inter_18pt-Medium.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    display: grid;
+    place-items: center;
+    background-image: url(background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#dayIntro {
+    font-size: 40px;
+    font-weight: 600;
+    letter-spacing: 3px;
+    border: 7px solid rgb(17, 129, 134);
+    border-radius: 10px;
+    margin: 20px;
+    font-family: 'Inter Black';
+    padding: 15px;
+    background: linear-gradient(180deg, #a8b9d3, rgb(173, 227, 229));
+}
+
+.container {
+    height: 120px;
+    width: 550px;
+    position: relative;
+    border-radius: 10px;
+    cursor: default;
+
+}
+
+.container .dispClock,
+.container {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.container .dispClock {
+    top: 50%;
+    height: 105px;
+    width: 535px;
+    border-radius: 6px;
+    text-align: center;
+}
+
+.dispClock #time {
+    line-height: 85px;
+    color: #fff;
+    font-size: 70px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    font-family: 'Inter Black';
+
+}
+
+.dispClock #dayName {
+    line-height: 85px;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    font-family: 'Inter Medium';
+    background: transparent;
+}
